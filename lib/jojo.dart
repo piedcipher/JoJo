@@ -12,9 +12,11 @@ class JoJo {
   JoJo({final String option}) {
     switch (option) {
       case '-o':
+      case '--onlinefriends':
         _getFriends(onlyOnline: true);
         break;
       case '-f':
+      case '--friends':
         _getFriends();
         break;
     }

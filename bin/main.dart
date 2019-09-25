@@ -13,7 +13,7 @@ void main(final List<String> arguments) {
   try {
     final ArgResults argResults = argParser.parse(arguments);
     argResults.arguments.isNotEmpty
-        ? argResults.arguments[0] != '-h'
+        ? argResults.arguments[0] != '-h' && argResults.arguments[0] != '--help'
             ? JoJo(option: argResults.arguments[0])
             : stdout.writeln(
                 '\nJoJo is a CLI utility to check last-visit of your CodeForces friends & much more.\n\n${argParser.usage}\n')
