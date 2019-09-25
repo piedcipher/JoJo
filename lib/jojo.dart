@@ -6,7 +6,7 @@ import 'package:crypto/crypto.dart';
 
 import 'config.dart';
 
-const API_BASE_URL = 'https://codeforces.com/api/';
+const String API_BASE_URL = 'https://codeforces.com/api/';
 
 class JoJo {
   JoJo({final String option}) {
@@ -24,7 +24,7 @@ class JoJo {
     const String PROFILE_BASE_URL = 'https://codeforces.com/profile/';
     if (parsedResponse['status'] == 'OK') {
       (parsedResponse['result'] as List)
-          .forEach((final onlineFriend) => stderr.writeln('$onlineFriend - $PROFILE_BASE_URL$onlineFriend'));
+          .forEach((final onlineFriend) => stdout.writeln('$onlineFriend - $PROFILE_BASE_URL$onlineFriend'));
     } else {
       stderr.writeln(parsedResponse['comment']);
     }
