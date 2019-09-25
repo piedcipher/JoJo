@@ -4,6 +4,7 @@
 
 ## Features
 - [x] Online Friends
+- [x] All Friends
 
 ## Prerequisite
 - [Dart SDK](https://dart.dev/get-dart)
