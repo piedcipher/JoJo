@@ -23,7 +23,7 @@ $ pub get
 $ dart bin/main.dart
 ```
 
-## Packages Used
+## Dependencies
 - [args](https://pub.dev/packages/args)
 - [crypto](https://pub.dev/packages/crypto)
 - [http](https://pub.dev/packages/http)
