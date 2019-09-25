@@ -20,7 +20,14 @@ $ pub get
 
 3. Run
 ```
-$ dart bin/main.dart
+$ dart2aot bin/main.dart bin/release.dart
+$ dartaotruntime bin/release.dart -h
+
+JoJo is a CLI utility to check last-visit of your CodeForces friends & much more.
+
+-o, --onlinefriends    Shows Online Friends
+-f, --friends          Shows Friends
+-h, --help             Help
 ```
 
 ## Dependencies
